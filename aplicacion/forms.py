@@ -1,4 +1,4 @@
-from django import forms
+sfrom django import forms
 from .models import *
 
 class AlquilarForm(forms.ModelForm):
@@ -17,4 +17,4 @@ class tasarForm(forms.Form):
     # Formulario para solicitar la tasación de una propiedad
     tipo = forms.CharField(max_length=50, required=True)  # Campo para el tipo de propiedad
     mt2 = forms.IntegerField(required=True)  # Campo para los metros cuadrados de la propiedad
-    precio = forms.IntegerField(required=True)  # Campo para el precio estimado de la propiedad
+    ambientes = forms.IntegerField(required=True)  # Campo para el precio estimado de la propiedad
